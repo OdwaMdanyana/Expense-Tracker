@@ -1,0 +1,35 @@
+.expense-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 15px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  padding: 5px;
+  color: rgb(226, 38, 38);
+}
+
+.expense-item__description {
+  display: flex;
+  flex-direction: column;
+  color: rgba(250, 246, 246, 0.733);
+  gap: 1rem;
+  align-items: flex-start;
+  flex-flow: column-reverse;
+}
+
+.expense-item__price {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  flex-flow: column-reverse;
+  border: 1px solid white;
+  border-radius: 15px;
+  padding: 0 15px;
+  color: #fff;
+  gap: 1rem;
+  background-color: rgb(66, 6, 66);
+}
+
+.date {
+  color: white;
+}
