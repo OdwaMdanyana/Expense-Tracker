@@ -37,7 +37,9 @@ function ExpanseForm() {
       amount: enteredAmount,
       date: new Date(enteredDate),
     };
-    console.log(expenseData);
+    setEnteredTitle('');
+    setEnteredAmount('');
+    setEnteredDate('');
   };
   return (
     <div>
@@ -46,7 +48,8 @@ function ExpanseForm() {
           <div className="new-expense__control">
             <label>Title</label>
             <input type="text" 
-            onChange={titleChangeHandler} />
+            onChange={titleChangeHandler}
+            value={enteredTitle} />
           </div>
           <div className="new-expense__control">
             <label>Amount</label>
@@ -55,13 +58,14 @@ function ExpanseForm() {
               min="0.01"
               step="0.01"
               onChange={amountChangeHandler}
-            />
+            value={enteredAmount}/>
           </div>
           <div className="new-expense__control">
             <label>Date</label>
             <input type="date" 
             min="2021-05-26" 
-            onChange={dateChangeHandler} />
+            onChange={dateChangeHandler} 
+            value={enteredDate}/>
           </div>
         </div>
         <div className="new-expense__actions">
