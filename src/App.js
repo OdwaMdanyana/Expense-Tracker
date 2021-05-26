@@ -1,5 +1,6 @@
 import "./App.css";
 import Expanses from "./components/Expanses/Expanses";
+import NewExpanse from "./components/NewExpanse/NewExpanse";
 
 const App = () => {
   const expenses = [
@@ -10,7 +11,8 @@ const App = () => {
   ];
   return (
     <div className="App">
-      <h1>Let's get started mate!!!</h1>
+      <h1>Expense Tracker</h1>
+      <NewExpanse/>
       <Expanses items={expenses}/>
     </div>
   );
