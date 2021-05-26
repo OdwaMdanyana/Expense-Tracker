@@ -1,10 +1,17 @@
 import ExpanseItem from "./ExpanseItem";
 import Card from "../UI/Card";
 import "./Expanses.css";
+import ExpansesFilter from "./ExpansesFilter";
+import { useState } from "react";
 
 const Expanses = (props) => {
+  const [filteredYear, setFilteredYear] = useState('2020');
+  const filterChangeHandler = selectedYear => {
+    setFilteredYear(selectedYear)
+  }
   return (
     <Card className="expenses">
+      <ExpansesFilter selected={filteredYear} onChange={filterChangeHandler}/>
       <ExpanseItem
         title={props.items[0].title}
         amount={props.items[0].amount}

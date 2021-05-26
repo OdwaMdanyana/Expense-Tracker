@@ -2,7 +2,7 @@ import React from "react";
 
 import "./ExpansesFilter.css";
 
-const ExpensesFilter = () => {
+const ExpansesFilter = () => {
   return (
     <div className="expenses-filter">
       <div className="expenses-filter__control">
@@ -18,4 +18,4 @@ const ExpensesFilter = () => {
   );
 };
 
-export default ExpensesFilter;
+export default ExpansesFilter;
