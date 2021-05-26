@@ -1,7 +1,7 @@
 import "./App.css";
-import Expanses from "./components/Expanses";
+import Expanses from "./components/Expanses/Expanses";
 
-function App() {
+const App = () => {
   const expenses = [
     { title: "Car insurance", amount: 294.67, date: new Date(2021, 5, 26) },
     { title: "House insurance", amount: 394.67, date: new Date(2021, 5, 27) },

@@ -1,8 +1,8 @@
 import ExpanseItem from "./ExpanseItem";
-import Card from "./Card";
+import Card from "../UI/Card";
 import "./Expanses.css";
 
-function Expanses(props) {
+const Expanses = (props) => {
   return (
     <Card className="expenses">
       <ExpanseItem
