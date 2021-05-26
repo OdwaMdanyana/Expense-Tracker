@@ -1,5 +1,5 @@
 import "./App.css";
-import ExpanseItem from "./components/ExpanseItem";
+import Expanses from "./components/Expanses";
 
 function App() {
   const expenses = [
@@ -11,26 +11,7 @@ function App() {
   return (
     <div className="App">
       <h1>Let's get started mate!!!</h1>
-      <ExpanseItem
-        title={expenses[0].title}
-        amount={expenses[0].amount}
-        date={expenses[0].date}
-      />
-      <ExpanseItem
-        title={expenses[1].title}
-        amount={expenses[1].amount}
-        date={expenses[1].date}
-      />
-      <ExpanseItem
-        title={expenses[2].title}
-        amount={expenses[2].amount}
-        date={expenses[2].date}
-      />
-      <ExpanseItem
-        title={expenses[3].title}
-        amount={expenses[3].amount}
-        date={expenses[3].date}
-      />
+      <Expanses items={expenses}/>
     </div>
   );
 }

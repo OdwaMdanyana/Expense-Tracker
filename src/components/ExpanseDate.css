@@ -7,17 +7,15 @@
   background-color: #2a2a2a;
   color: white;
   border-radius: 12px;
+  padding: 8px;
   align-items: center;
   justify-content: center;
 }
 
 .expense-date__month {
   font-weight: bold;
-  font-size: 0.95rem;
-  background-color: rgba(99, 42, 165, 0.39);
-  border-radius: 15px 15px 0px 0px;
-  width: 11.5vw;
-  height: 100vh;
+  font-size: 1.95rem;
+  padding: 8px;
   text-align: center;
   align-items: center;
   justify-content: center;
@@ -25,7 +23,7 @@
 
 .expense-date__day {
   font-weight: bold;
-  font-size: 0.75rem;
+  font-size: 0.95rem;
 }
 
 .expense-date__year {
