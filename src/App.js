@@ -9,17 +9,18 @@ const App = () => {
     { title: "Groceries", amount: 194.67, date: new Date(2021, 5, 28) },
     { title: "New Desk", amount: 594.67, date: new Date(2021, 5, 30) },
   ];
-  const addExpenseHandler = expenses => {
-    console.log('In App.js')
-    console.log(expenses)
-  }
+  const addExpenseHandler = (expenses) => {
+    console.log("In App.js");
+    console.log(expenses);
+  };
   return (
     <div className="App">
       <h1>Expense Tracker</h1>
-      <NewExpanse onAddExpense = {addExpenseHandler}/>
-      <Expanses items={expenses}/>
+
+      <NewExpanse onAddExpense={addExpenseHandler} />
+      <Expanses items={expenses} />
     </div>
   );
-}
+};
 
 export default App;
